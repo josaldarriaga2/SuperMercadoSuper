@@ -1,0 +1,24 @@
+.contenedor {
+	display: grid;
+	grid-gap:20px;
+	grid-template-columns: repeat(3,1fr);
+	grid-template-rows: repeat(3,200px);
+
+	 /* Alinea Horizontalmente 
+	    justify-items: start				coloca el elemento al inicio del espacio
+			justify-items: auto  				abarca todo el espacio disponoble
+			justify-items: stretch			abarca todo el espacio disponible
+			justify-items: center				centra el elemento en el espacio
+			justify-items: end					coloca el elemento al final del espacio*/
+	justify-items: center;
+
+	 /* Alinea Verticalmente   */
+	align-items: center;
+	
+}
+
+ /* Si se desea alinear solo una celda */
+.contenedor .celda5 {
+	background: #FF8000;
+	justify-self: stretch;
+}

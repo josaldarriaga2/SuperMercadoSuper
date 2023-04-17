@@ -1,0 +1,25 @@
+.contenedor {
+  display: grid;
+	grid-gap:20px;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: repeat(4,1fr);
+}
+
+.contenedor .item {
+	background-color: #ff8000;
+	/* grid-column-start:1 ;
+	grid-column-end:4 ;
+	grid-row-start: 2;
+	grid-row-end: 4; */
+
+	/* Atajo 1 */
+	/* grid-column: 1/4;
+	grid-row: 2/4; */
+	
+	/* Atajo 2*/
+	/* grid-area: 2/1/4/4; */
+
+	/* Usando span */
+	grid-column: span 2;
+	grid-row: 3/span 2;
+}

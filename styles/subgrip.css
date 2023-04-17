@@ -1,0 +1,110 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background: #f1f1f1;
+	padding: 40px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Raleway', sans-serif;
+	margin: 0;
+}
+
+.contenedor {
+	max-width: 1000px;
+	width: 90%;
+	margin: auto;
+}
+
+header {
+	margin-bottom: 40px;
+}
+
+header h3 {
+	color: #5A5A5A;
+}
+
+header h1 {
+	font-size: 60px;
+	font-weight: normal;
+}
+
+.publicaciones {
+	display: grid;
+    grid-template-columns: repeat(6, 1fr);
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+
+    grid-template-rows: repeat(1,auto 1fr auto);
+}
+
+.publicacion {
+	padding: 20px;
+	background: #fff;
+	box-shadow: 0 4px 20px rgba(194,194,194,.25);
+	border-radius: 5px;
+	display: grid;
+
+    /* Importante */
+    grid-row: span 3;
+    grid-template-rows: subgrid;
+
+    grid-column: span 3;
+    grid-template-columns: subgrid;
+
+
+
+}
+
+.publicacion .titulo {
+	color: #C00000;
+	font-size: 32px;
+	margin: 0;
+	
+}
+
+.publicacion .texto {
+	line-height: 28px;
+	color: #1E1E1E;
+	
+}
+
+.publicacion .botones {
+	
+
+}
+
+.publicacion button {
+	margin-right: 20px;
+	
+	text-align: left;
+	border: none;
+	background: none;
+	padding: 0;
+	cursor: pointer;
+}
+
+.publicacion button.comentario i {color: #00C2FF;}
+.publicacion button.favoritos i {color: #FF0000;}
+.publicacion button.retweets i {color: #40C800;}
+
+@media screen and (max-width: 850px) {
+	
+}
+Footer
+© 2023 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
