@@ -15,7 +15,7 @@ body {
     max-width: 1360px;
     margin: 10px auto;
     display: grid;
-    gap: 10px;
+    gap: 0px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4,aut);
 
@@ -40,13 +40,13 @@ body {
 }
 
 .contenedor .header {
-    height: 248px;
+    margin: 0px;
+    height: 230px;
     background: #a1bb23;
     color: #fff;
     display: grid;
-    grid-gap:10px;
-    grid-template-columns: 190px repeat(4, 1fr);
-    justify-content: space-evenly;
+    grid-gap:5px;
+    grid-template-columns: 190px 500px repeat(3, 1fr);
     
     /* grid-area: header; */
 
@@ -57,15 +57,38 @@ body {
   height:248px;
 }
 
+.header .buscador,
+.header .carritodecompras,
+.header .registrese,
+.header .usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .buscador {
-  font-size: 40px;
+  width: 450px;
+  /* display: flex;
+  justify-content: start;
+  align-items: center; */
 }
 
-.buscar{
-  height: 248px;
-  width: 240;
+
+input.tex_buscar{
+  font-size: 20px;
+  height: 35px;
+  width: 450;
 }
 
+input.buscar {
+  height: 35px;
+  width: 450;
+}
+
+.carritodecompras {
+  width="50";
+  height="50":
+}
 
 
 .contenedor .sidebar {
