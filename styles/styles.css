@@ -52,10 +52,10 @@ body {
 
 }
 
-.logoheader {
+/* .logoheader {
   width: 188px;
   height:248px;
-}
+} */
 
 .header .buscador,
 .header .carritodecompras,
@@ -73,7 +73,6 @@ body {
   align-items: center; */
 }
 
-
 input.tex_buscar{
   font-size: 20px;
   height: 35px;
@@ -85,9 +84,9 @@ input.buscar {
   width: 450;
 }
 
-.carritodecompras {
-  width="50";
-  height="50":
+.registrese {
+  font-size: 20px;
+  color: #fff;
 }
 
 
@@ -97,6 +96,7 @@ input.buscar {
     display: grid;
     grid-gap:10px;
     grid-template-columns: repeat(3, 1fr);
+    display: flex;
     justify-content: space-evenly;
     /* display: flex;
     align-items: center;
@@ -107,14 +107,18 @@ input.buscar {
 
 
 .contenedor .contenido {
-  height: 350px;
+  height: 250px;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
     /* grid-area: contenido; */
 }
 
 
 .contenedor .footer {
+    margin-left: 40;
     height: 110px;
     /* grid-column: span 3; */
     background: #a1bb23;
@@ -123,10 +127,18 @@ input.buscar {
     align-items: center;
     justify-content: center;
     display: grid;
-    grid-gap:10px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-gap:5px;
+    grid-template-columns: 95px 220px 220px 220px 220px 1fr;
+    /* display: flex; */
     justify-content: space-evenly;
+    align-items: center;
     /* grid-area: footer; */
+}
+
+.contenedor .footer .redes {
+  display: grid;
+  grid-gap:5px;
+  grid-template-columns: repeat(3, 50px);
 }
 
 
