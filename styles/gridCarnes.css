@@ -15,10 +15,20 @@
 }
 
 .foto {
-    
-    justify-self: stretch;
-    background: rgb(238, 224, 224);
+    margin: auto;
     grid-area: foto;
 
 }
 
+.cantidad {
+    margin: auto;
+}
+
+.carrito {
+    margin: auto;
+}
+
+.datos {
+    margin: auto;
+    grid-area: datos;
+}
