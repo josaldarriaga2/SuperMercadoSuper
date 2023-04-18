@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #cbd6f3;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.contenedor {
+    width: 100%;
+    max-width: 1360px;
+    margin: 10px auto;
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4,aut);
+}
+
+
+.contenedor > div {
+  text-align: justify;
+}
+
+.contenedor .header, 
+.contenedor .contenido, 
+.contenedor .sidebar, 
+.contenedor .footer {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .header {
+    margin: 0px;
+    padding: 0%;
+    height: 150px;
+    background: #a1bb23;
+    color: #fff;
+    display: grid;
+    grid-gap:5px;
+    grid-template-columns: 190px 500px repeat(3, 1fr);
+    
+}
+
+.header .buscador,
+.header .carritodecompras,
+.header .registrese,
+.header .usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buscador {
+  width: 450px;
+ 
+}
+
+input.tex_buscar{
+  font-size: 20px;
+  height: 35px;
+  width: 450;
+}
+
+input.buscar {
+  height: 35px;
+  width: 450;
+}
+
+.registrese {
+  font-size: 20px;
+  color: #fff;
+}
+
+
+.contenedor .sidebar {
+    padding: 0%;
+    height: 55px;
+    background: #FF9A36;
+    color: #fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+.contenedor .contenido {
+    margin: 0px;
+  display: grid;
+  gap: 10px;
+  
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 530px;
+
+  /* display: flex;
+  justify-content: space-evenly;
+  align-items: center; */
+  
+}
+
+
+.contenedor .footer {
+    padding: 0%;    
+    height: 150px;
+    
+    background: #a1bb23;
+    color:#fff;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+    grid-gap:5px;
+    grid-template-columns: 95px 220px 220px 220px 220px 1fr;
+    
+}
+
+.contenedor .footer .redes {
+  display: grid;
+  grid-gap:5px;
+  grid-template-columns: repeat(3, 50px);
+  
+}
+
